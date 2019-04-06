@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<html dir="rtl">
+
+<!-- bushra fawaz 437007965 -->
+<html>
+<head>
+<style>
+body {
+  background-color:#f1f1f1;;
+}
+h2 {
+  color:black;
+  text-align:center ;
+text-shadow: 3px 2px  Gray;
+}
+
+p {
+  text-align:RIGHT;
+  font-size: 20px;
+color:black;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid black;
+  background-color: gray;
+}
+li {
+  float: right;
+}
+li a {
+  display: block;
+  color: #222;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color:gray;
+}
+li a.active {
+  color: black;
+  background-color:#f1f1f1;
+}
+input[type=text],select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email],select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit]{
+  width: 100%;
+  background-color: #f2f2f2;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+div {
+  border-radius: 5px;
+  background-color: gray;
+  padding: 20px;
+}
+aside{
+  float: right;
+  width: 20%;
+  height: 600px; 
+  background: #ccc;
+  padding: 30px;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+
+<p6 style= "color:purple;" align="center">  login \singup </p6><!--الدخول الى الموقع -->
+</head>
+<!--نهاية الرأس-->
+
+
+
+<hr width="100%"/>
+
+<body>
+<!-- bushra fawaz 437007965 -->
+<section>
+
+ <article>
+<ul>
+  <li><a class="active" href="file:///C:/Users/bushra/Desktop/new/projet.htm" >Home</a></li>
+  <li><a href="https://mail-attachment.googleusercontent.com/attachment/u/0/?ui=2&ik=fcacea4973&attid=0.1&permmsgid=msg-f:1628153975044996800&th=16985d69fa327ec0&view=att&disp=inline&realattid=f_jtbahc4c0&saddbat=ANGjdJ_KaZbxu0Rw6kZPMBkDYewFw2s1cBh751hrNWyNPO4JbbxOYFyhnHyfBVctXKaLSA_4Pds6DkU3RLedOmRb45D2NhTxwgqru4Schhx5THGn0L7V1H5l3fjqeSi8gbAL4goIgTLRGJG8KNzlqcbk9cCzR0og44N6csoxYvD4qIH_rY_6wtlHSpc2WykN-8aba2SElGx5ZqJRByKo4vskI94-6M_qSu0rp5Qj_4jmiKq5AYsPxb22u5sfKfBuZOTjqOwXw-f8uiN5QnWOuHiLUAr2IgzYbhPnmns8WFqqsIte8DXbQ_pkX3zdhXSsvZjsgbQEoV8Tt1oFW9UV4ChGc97k2t0znt6XhN_kpzVAlJT7zylhjGKl8xteJ1Jr93NtdJH6qcuNSxCt3AUfgASoI7eBIlsoi8IhjjrVdzBvde1pUmpRuWlAQxLUz0nM2443XwpvgI2gAEBREAVGgcghy4awQCPQ4ANrMvFvkKfEQIqcX5QVzOia2GV_Y2VabMc5ZxNlTF_tKu6_t2YTIgxObSeBJHsvXZNiGJUrsCaQGUM5EUNFTEuDEtqKIwEPeER084-_w7-YDOXv_-d-g64pNVN1704h2SJws67c7ovjxy_DS3SNHxv7zUHm2xm7loaP5ZSbOtqt9um7YpNcigCEriJ2GSrezf51vRl6Lw">لفظي</a></li>
+  <li><a href="https://mail-attachment.googleusercontent.com/attachment/u/0/?ui=2&ik=fcacea4973&attid=0.2&permmsgid=msg-f:1628153461979084704&th=16985cf28515f7a0&view=att&disp=inline&realattid=f_jtb3smle0&sadnir=1&saddbat=ANGjdJ-pYZunj3gZ5tbBDQx4MoZYZUSRANP0mfNyAAeUmWW-3d8zaaOYHH_OsdoBbhcK-IAbVHLz_V9_MGSXvlIEoUWd5Ev7OG7Dw4lmFOGzaxaYruchzteK7pYzsNp60hDf0qpqKtpp-P0fTxX1Ssj3-2CkYo3mZwv9gau0aYH11Ao7ZHPZgFGD85XAatFHSVxAfO_XlzRl-16XhFZMKJwRi0NiOUxyfkMdNpcTpTHzpmS2OD5NBBjosyESxpV1v10_uG3m62axPzZ4j_zln9JjuuGmF27VfasLah7YaIHukTHD1faAULW_TDzGp8oecU2ZhP0bqOqW8RLrRimtnCuj02RfeDWc9S2ClhCx-Pez8biB46tIZ4qf6xnbFspFjIUj7z4jfz-8UlsFHtClgaYWTn8pXKbMejgSDXQSz4IhiXLlya8p5NDNzNiJ2Xu6zQp1tzz98pV_aOw7tKu8zegl-RbYoxvimWiP4urB6dNEPd0ulqFoLXHezv7JJlGhvwuJhM2Y8sTD8xsxfgC7VsMWsuKakIIo25LQMvmwjY90fwB-HUyzwIzcf4pNwFbYcedc94BNUYBqyEFM4elbO3DKe12fH0Jbh5MvfQLIgm8vT2pii4mT_CMHbDjcU3FtjAvrV86aKCXncPl4OTjxuuhSa4Vmw68KIeBXy4uR9Q">كمي</a></li>
+  <li><a href="https://www.youtube.com/user/tamimi1399/videos">مقاطع لليوتيوب مفيدة لجميع الطلاب</a></li>
+</ul>
+
+<h2 style="text-align:centeR">تدريب اختبار القدرات </h2>
+<!-- التعريف بالعنوان الفرعي-->
+<p id="p">اختبار القدرات العامة هو اختبار القبول الموحد للكلية في الجامعات السعودية ويقدمه الطلاب والطالبات السعوديون في المرحلة الثانوية بجانب الاختبار التحصيلي للطلاب واختبار القبول للطالبات. 
+وعدد اختباراته 5 ثلاث منها ورقي واثنان محوسب -او 4 ورقي وواحد محوسب- . وهو أاحد اختبارات المركز الوطني للقياس والتقويم، الاختبار يقيس قدرات الطلاب في الرياضيات واللغة العربية وهو إجباري للقبول في 
+الجامعات والكليات وكل جامعة تشترط درجة محدده من القدرات. اختبار قدرات مملوك ومقدم ومنشور من قبل مجلس التعليم العالي وهي منظمة ربحية -رسوم دخول الاختبار الواحد 100 ريال و 150 للتسجيل المتأحه
+- في السعودية التي وضعت وطورت المركز الوطني للقياس والتقويم المشرفه على الأختبار. طالب مجلس التعليم العالي بالاختبار لانه يقيم قدرات الطلاب ومهاراتهم واتجاتهم 
+الدراسية وقد صدر بتاريخ 19/6/1421 هـ الأمر السامي ذو الرقم 471/8 بالموافقة على قرار مجلس التعليم العالي، المؤيد بقرار مجلس الوزراء السعودي وقد قدم أول اختبار في عام 1424 هـ وكان حصري 
+للأولاد فقط وقدم أول اختبار للفتيات في عام 1430 </p>
+
+<div>
+  <form action="file:///C:/Users/bushra/Desktop/new/projet.htm" method="post">
+    <label for="fname">اسم الطالب</label>
+    <input type="text" id="fname" name="اسم الطالب " placeholder="الاسم" required>
+    <input type="email" id="email" name="البريد الاكتروني" placeholder="البريد الاكتروني.." required>
+   <input type="submit" id="submit" onclick="myFunction()" >
+  </form>
+</div>
+</article>
+
+<aside>
+<h2>قدرات</h2>
+ <p>  اختبار القدرات </p>
+ <p> أسئله كميه  </p>
+ <p> أسئله لفظيه  </p>
+ <p>مقاطع فديوا مفيده لجميع الطلاب </p>
+</aside>
+</section>
+<script>
+function myFunction() {
+ 
+var str = "    أهلاً و سهلاً     ";
+  alert(str.trim());
+}
+</script>
+
+</body>
+</html>
