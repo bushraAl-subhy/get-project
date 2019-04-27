@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #f5f5f5;
+}
+
+h1 {
+  color: back;
+  text-align: right;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+</style>
+</head>
+<title>√ќ »— ёѕ—« я </title>
+<p id="demo"></p>
+
+<style>
+table, td, th {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+
+th {
+  height: 50px;
+}
+</style>
+</head>
+<header>
+
+
+<nav>
+ <div align="right"> <br><br>
+
+<a href="/«б’ЁЌе «б—∆н”н…/">«б’ЁЌе «б—∆н”н…</a> |
+<a href="/«бћ“Ѕ «ббЁўн/">«бћ“Ѕ «бягн</a> |
+<a href="/«бћ“Ѕ «бягн/">«бћ“Ѕ «ббЁўн</a> |
+
+
+
+
+</nav>
+ <div align="right"> <br><br>
+<canvas id="canvas" width="100" height="100"
+style="background-color:#333">
+</canvas>
+
+<script>
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+var radius = canvas.height / 2;
+ctx.translate(radius, radius);
+radius = radius * 0.90
+drawClock();
+
+function drawClock() {
+  drawFace(ctx, radius);
+  drawNumbers(ctx, radius);
+  drawTime(ctx, radius);
+}
+
+function drawFace(ctx, radius) {
+  var grad;
+  ctx.beginPath();
+  ctx.arc(0, 0, radius, 0, 2*Math.PI);
+  ctx.fillStyle = 'white';
+  ctx.fill();
+  grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
+  grad.addColorStop(0, '#333');
+  grad.addColorStop(0.5, 'white');
+  grad.addColorStop(1, '#333');
+  ctx.strokeStyle = grad;
+  ctx.lineWidth = radius*0.1;
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
+  ctx.fillStyle = '#333';
+  ctx.fill();
+}
+
+function drawNumbers(ctx, radius) {
+  var ang;
+  var num;
+  ctx.font = radius*0.15 + "px arial";
+  ctx.textBaseline="middle";
+  ctx.textAlign="center";
+  for(num = 1; num < 13; num++){
+    ang = num * Math.PI / 6;
+    ctx.rotate(ang);
+    ctx.translate(0, -radius*0.85);
+    ctx.rotate(-ang);
+    ctx.fillText(num.toString(), 0, 0);
+    ctx.rotate(ang);
+    ctx.translate(0, radius*0.85);
+    ctx.rotate(-ang);
+  }
+}
+
+function drawTime(ctx, radius){
+    var now = new Date();
+    var hour = now.getHours();
+    var minute = now.getMinutes();
+    var second = now.getSeconds();
+    //hour
+    hour=hour%12;
+    hour=(hour*Math.PI/6)+
+    (minute*Math.PI/(6*60))+
+    (second*Math.PI/(360*60));
+    drawHand(ctx, hour, radius*0.5, radius*0.07);
+    //minute
+    minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
+    drawHand(ctx, minute, radius*0.8, radius*0.07);
+    // second
+    second=(second*Math.PI/30);
+    drawHand(ctx, second, radius*0.9, radius*0.02);
+}
+
+function drawHand(ctx, pos, length, width) {
+    ctx.beginPath();
+    ctx.lineWidth = width;
+    ctx.lineCap = "round";
+    ctx.moveTo(0,0);
+    ctx.rotate(pos);
+    ctx.lineTo(0, -length);
+    ctx.stroke();
+    ctx.rotate(-pos);
+}
+</script>
+
+
+ <div align="right"> <br>
+
+<h1 style="background-color:LightGray;">«бћ“Ѕ «ббЁўн</h1>
+<!-- ‘еѕ »дѕ— «бЏ н»н s437031729  --> 
+
+<header/>
+<body>
+
+<div align="right"> <br><br>
+<p1> <span style="color: #8c8c8c"> гЋ«б1: Џ’—д« Џ’— «дЁћ«— «бгЏ—Ё…Ї Ё√Џѕ«ѕ е«∆б… гд «бЏбг«Ѕ н‘ џбжд »«б»ЌЋ «бЏбгн б«ќ —«Џ ж Ўжн—<br>ж”«∆б ЌЁў 
+«бгЏбжг«  ждёбе« ж»Ће«Ї ббѕЁЏ ёѕг« »«б ж«’б «бядн «бЁ—нѕ яб –бя ћЏб «бд«” гџгж—нд »«б√ќ»«— ж«бгЏбжг«  ж«бгЁ«енг «б н  —ѕ≈бнег Ён яб бЌў… гд ‘ м √’ё«Џ «б√—÷
+ <br>:нЁег гд «бд’ √д Џ’—д« «бнжг Џ’— </span></p1>
+
+<br>
+ <form action="/action_page.php">
+<br>
+
+<div align="right"> <br><br>
+
+<input type="checkbox" name="option1" value="яЋ—  Ёне «бгЏбжг«  жг’«ѕ—е«">яЋ—  Ёне «бгЏбжг«  жг’«ѕ—е«<br>
+<br>
+<input type="checkbox" name="option1" value="«“ѕ«ѕ  Ёне «бгЏбжг«  Ён гћ«б«  гЏнде ">«“ѕ«ѕ  Ёне «бгЏбжг«  Ён гћ«б«  гЏнде<br>
+<br>
+<input type="checkbox" name="option1" value="Ќ’б «дЁћ«— ”я«дн е«∆б">Ќ’б «дЁћ«— ”я«дн е«∆б<br>
+<br>
+<input type="checkbox" name="option1" value=" ж”Џ  Ёне «бёдж«  «б«Џб«гне">  ж”Џ  Ёне «бёдж«  «б«Џб«гне<br>
+
+</div>
+</form>
+
+<br>
+<input type="button" onClick="location.href='file:///C:/Users/shahd999/Desktop/«ќ »—%20ёѕ—« я/ans.html'" value='«дё— ед« ' />  
+
+
+
+
+
+
+
+
+
+
+
+<div align="right"> <br><br>
+ <font size="4"><mark>«б д«ў— «бббЁўн</mark></font></p>
+
+
+<form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
+ <div align="right"> <br><br>
+ <p1> <span style="color: #8c8c8c">гЋ«б 2 :√”ѕ:‘»б</span></p1> 
+<br>
+<form action="/action_page.php">
+<input type="checkbox" name="option1" value="д”—:’ё—"> д”—:’ё—<br>
+<br>
+<input type="checkbox" name="option1" value="ѕћ«ће:я яж ">ѕћ«ће:я яж <br>
+<br>
+<input type="checkbox" name="option1" value="ќ—жЁ:я»‘">ќ—жЁ:я»‘<br>
+<br>
+<input type="checkbox" name="option1" value="Ќнж«д:ћгб"> Ќнж«д:ћгб<br>
+
+</div>
+</form>
+<br>
+<input type="button" onClick="location.href='file:///C:/Users/shahd999/Desktop/«ќ »—%20ёѕ—« я/ans.html'" value='«дё— ед« ' />  
+
+
+
+<form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
+ <div align="right"> <br><br>
+<p1> <span style="color: #8c8c8c">гЋ«б3: џдн:Ёён—</span></p1>
+ <form action="/action_page.php">
+<br>
+<input type="checkbox" name="option1" value="я—г:ћжѕ"> я—г:ћжѕ<br>
+<br>
+<input type="checkbox" name="option1" value="г—÷:√бг">г—÷:√бг<br>
+<br>
+<input type="checkbox" name="option1" value="»нЏ:е»е">»нЏ:е»е<br>
+<br>
+<input type="checkbox" name="option1" value="—»Ќ:ќ”«—е"> —»Ќ:ќ”«—е<br>
+
+</div>
+</form>
+<br>
+<input type="button" onClick="location.href='file:///C:/Users/shahd999/Desktop/«ќ »—%20ёѕ—« я/ans.html'" value='«дё— ед« ' />  
+
+
+
+<br>
+<div align="right"> <br><br>
+ <font size="4"><mark>«б«— »«Ў ж«б«ќ б«Ё </mark></font></p>
+
+<form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
+ <div align="right"> <br><br>
+<p1> <span style="color: #8c8c8c">гЋ«б 4:√н «б√ н гќ бЁ </span></p1>
+<br>
+<form action="/action_page.php">
+<input type="checkbox" name="option1" value="ћ»д"> ћ»д<br>
+<br>
+<input type="checkbox" name="option1" value="Џ”б">Џ”б<br>
+<br>
+<input type="checkbox" name="option1" value="Џѕ”">Џѕ”<br>
+<br>
+<input type="checkbox" name="option1" value="»н÷"> »н÷<br>
+
+</div>
+</form>
+<br>
+<input type="button" onClick="location.href='file:///C:/Users/shahd999/Desktop/«ќ »—%20ёѕ—« я/ans.html'" value='«дё— ед« ' />  
+
+
+<br>
+
+<form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
+ <div align="right"> <br><br>
+<p1> <span style="color: #8c8c8c">гЋ«б 5:√н «б√ н гќ бЁ </span></p1>
+<br>
+<form action="/action_page.php">
+<input type="checkbox" name="option1" value="жЋ»"> жЋ»<br>
+<br>
+<input type="checkbox" name="option1" value="е—жбе">е—жбе<br>
+<br>
+<input type="checkbox" name="option1" value="г‘н">г‘н<br>
+<br>
+<input type="checkbox" name="option1" value="—я÷"> —я÷<br>
+
+</div>
+</form>
+<br>
+<input type="button" onClick="location.href='file:///C:/Users/shahd999/Desktop/«ќ »—%20ёѕ—« я/ans.html'" value='«дё— ед« ' />  
+
+
+<div align="right"> <br><br>
+ <font size="4"><mark>«яг«б «бћгб </mark></font></p>
+
+<br>
+<form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
+ <div align="right"> <br><br>
+<p1> <span style="color: #8c8c8c">гЋ«б 6: ..... б« ќн— Ён «бёжб ≈б« гЏ «бЁЏб°жб« Ён «бг«б ≈б« гЏ «бћжѕ°жб« Ён «бЏЁе «б« гЏ </span></p1>
+<br>
+<form action="/action_page.php">
+<input type="checkbox" name="option1" value="«бж—Џ"> «бж—Џ<br>
+<br>
+<input type="checkbox" name="option1" value="«бЁ“Џ">«бЁ“Џ<br>
+<br>
+<input type="checkbox" name="option1" value="«б»Ў‘">«б»Ў‘<br>
+<br>
+<input type="checkbox" name="option1" value="«бя—г"> «бя—г<br>
+
+</div>
+</form>
+<br>
+<input type="button" onClick="location.href='file:///C:/Users/shahd999/Desktop/«ќ »—%20ёѕ—« я/ans.html'" value='«дё— ед« ' />   
+
+
+<div align="right"> <br><br>
+ <font size="4"><mark>«бќЎ√ «б”н«ён </mark></font></p>
+
+<br>
+<form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
+ <div align="right"> <br><br>
+<p1> <span style="color: #8c8c8c">гЋ«б 7:бб џн— «бгд«ќн «бябг… «бЁ’б Ён «б’Ќ—«ЅЇ ЁЁн √“гд… «бжЁ—…  д√м «б»Ќн—« Ї Ё “ѕе— «б ћгЏ«  «б»‘—не Ён «—ћ«∆е«  </span></p1>
+<br>
+ <form action="/action_page.php">
+<input type="checkbox" name="option1" value="«бЁ’б"> «бЁ’б<br>
+<br>
+<input type="checkbox" name="option1" value=" д√м"> д√м<br>
+<br>
+<input type="checkbox" name="option1" value="Ё “ѕе—">Ё “ѕе—<br>
+<br>
+<input type="checkbox" name="option1" value="«—ћ«∆е«"> «—ћ«∆е«<br>
+
+</div>
+</form>
+<br>
+<input type="button" onClick="location.href='file:///C:/Users/shahd999/Desktop/«ќ »—%20ёѕ—« я/ans.html'" value='«дё— ед« ' />  
+
+
+
+
+
+
+<div align="right"> <br><br>
+
+  <font size="4"><mark>√” нЏ«» «бгё—жЅ</mark></font></p>
+
+
+<form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
+ <div align="right"> <br><br>
+<p1> <span style="color: #8c8c8c"> «бд’:  ќ б№№Ё «б√де«— Ёнг« »нде« «ќ б«Ё« я»н—« гд ЌнЋ «бЌћг Ё»Џ÷е« ’џн— ћѕ« Ќ№ м ≈де«  ћЁ ќб«б Ё’жб «бћЁ«Ё. ж√Ўжб де— Ён «бЏ«бг еж де— рћѕ««бднб Ён ≈Ё—нён«° жнбне гд ЌнЋ «бЎжб де— <br>
+ «б√г«“жд Ён √г—ня« «бћдж»н…° ≈б« √д ягн… «бгн«е «б н нЌгбе« де— «б√г«“жд  Ёжё ягн… «бгн«е Ён √н де— ¬ќ№№—° »б ж Ёжё ягн… «бгн«е Ён де— «бднб° жде— «бг”н”нн Ён √г—ня«° жде— н«дћ” н Ён «б’н° гћ гЏ…. ж≈бм ћ«д№» яжд «б√де«— гег… бб“—«Џ…°<br>
+ Ёен г’ѕ— гег ббЎ«ё…Ї ≈– нгя№д «”№№ ќѕ«г ёж…  ѕЁё «бгн«е Џбм «г ѕ«ѕ «бде—° Џдѕ «бг”«ёЎ жџн—е« шгд «бгд«Ў№ё «бгдЌѕ—…Ї б ‘№џнб «б¬б« ° ж жбнѕ «бяе—»«Ѕ° ЌнЋ  Ќж «б”ж«ён ж«бѕж«бн№» «бг«∆н… ёж… «бгн«е «бг ѕЁё… ≈бм Ў«ё…. <br>жя«д  «бЎж«Ќн ж«бж—‘ жг’«дЏ «бд”нћ  ё«г Ён «бг«÷н »«бё—» гд «б√де«— «бгдЌѕ—…° жя«д   ѕн—е« ёж… «дѕЁ«Џ «бгн«е. <br>жЁн «бжё  «бЌ«÷№—°  д ћ гЌЎ«  «бёж… «бяе—жг«∆н…° –«  «б ж—»нд«  «бг«∆н…° дЌж —»Џ «бёж… «бяе—»«∆н… «б н нЌ «ће« «бЏ«бг.
+ <br>
+гЋ«б 8 :де— «бднб гд ЌнЋ Ўжбе жягн… г«∆е,гё«—д… »де— «б√г«“жд: </span></p1>
+<br>
+<form action="/action_page.php">
+<input type="checkbox" name="option1" value="«ё’— где,ж«ёб г«Ѕ"> «ё’— где,ж«ёб г«Ѕ<br>
+<br>
+<input type="checkbox" name="option1" value="«Ўжб где,ж√яЋ— г«Ѕ">«Ўжб где,ж√яЋ— г«Ѕ<br>
+<br>
+<input type="checkbox" name="option1" value="«ё’— где,ж√яЋ— г«Ѕ">«ё’— где,ж√яЋ— г«Ѕ<br>
+<br>
+<input type="checkbox" name="option1" value="√Ўжб где,ж√ёб г«Ѕ"> √Ўжб где,ж√ёб г«Ѕ<br>
+</div>
+</form>
+<br>
+<input type="button" onClick="location.href='file:///C:/Users/shahd999/Desktop/«ќ »—%20ёѕ—« я/ans.html'" value='«дё— ед« ' />  
+
+
+
+
+
+
+
+
+<form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
+ <div align="right"> <br><br>
+<p1> <span style="color: #8c8c8c"> гЋ«б9: нЁег гд «бд’ «б”«»ё √д «бг ”»» Ён  жбнѕ «бЎ«ё… гд «б√де«— ,еж :</span></p1>
+<br>
+<form action="/action_page.php">
+<input type="checkbox" name="option1" value="Ўжб гћ—«е«"> Ўжб гћ—«е«<br>
+<br>
+<input type="checkbox" name="option1" value="ёж… «дѕЁ«Џ гн«∆е«">ёж… «дѕЁ«Џ гн«∆е«<br>
+<br>
+<input type="checkbox" name="option1" value="ягн… ћ—н«д гн«∆е«">ягн…ћ—н«д гн«∆е« <br>
+<br>
+<input type="checkbox" name="option1" value="Џ—÷ гћ—«е«"> Џ—÷ гћ—«е«<br>
+</div>
+</form>
+<br>
+<input type="button" onClick="location.href='file:///C:/Users/shahd999/Desktop/«ќ »—%20ёѕ—« я/ans.html'" value='«дё— ед« ' />  
+
+
+<form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
+ <div align="right"> <br><br>
+<p1> <span style="color: #8c8c8c"> «бд’:ябг«  —”ќ «б«”г «б ћ«—н Ён √–е«д «бд«”Ї “«ѕ «” еб«я «бгд ћЇ ж»«б «бн “«ѕ  √—»«Ќ «б‘—я….
+<br>
+гЋ«б 10: н” д ћ  гд «бд’ √д «бгд ћ«  «б ћ«—н…  я”» ’Ё… «б«д ‘«— ж«б—ж«ћ »”»»:
+ </span></p1>
+<br>
+<form action="/action_page.php">
+<input type="checkbox" name="option1" value="Џб«ё«  «б‘—я…"> Џб«ё«  «б‘—я…<br>
+<br>
+<input type="checkbox" name="option1" value="ћжѕ… «бгд ћ« ">ћжѕе «бгд ћ« <br>
+<br>
+<input type="checkbox" name="option1" value="«бѕЏ«н… «б«Џб«гн…">«бѕЏ«н… «б«Џб«гн… <br>
+<br>
+<input type="checkbox" name="option1" value="«б“н«ѕ… «б«” еб«яне"> «б“н«ѕе «б«” еб«яне<br>
+</div>
+</form>
+<br>
+<input type="button" onClick="location.href='file:///C:/Users/shahd999/Desktop/«ќ »—%20ёѕ—« я/ans.html'" value='«дё— ед« ' />  
+
+
+                                             
+<br>
+<br>
+<p><strong><mark>гб«Ќўе:</mark></strong> «дё— б Џбг «бг“нѕ Џд «бћ“Ѕ «ббЁўн.</p>
+<a href="https://www.youtube.com/watch?v=br0HWhMsXx4&feature=youtu.be" title="«”«”н« ">√”«”н«   «бћ“Ѕ «ббЁўн  <a/>
+
+
+
+
+
+
+
+</body>
+</html> 
